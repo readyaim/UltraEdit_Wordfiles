@@ -1,0 +1,99 @@
+/L31"TradeBlazer" C_LANG Line Comment = // Block Comment On = /* Block Comment Off = */ Escape Char = \ String Chars = "' File Extensions = TB
+/Delimiters = ~!@%^&*()-+=|\/{}[]:;"'<> ,	.?
+/Function String = "%^([a-zA-Z_0-9^[^]*]+^)[ ^t]+([^p*&:, ^t^[^]a-zA-Z_0-9.!]++)[~;]"
+/Function String 1 = "%[a-zA-Z_0-9*]*::^([a-zA-Z_0-9^~]+^)[ ^t^p]++([^p*&:, ^t^[^]/*^-'=:&a-zA-Z_0-9./(!]++)[~;]"
+/Function String 2 = "%[a-zA-Z_0-9^][a-zA-Z_0-9^[^]]+[ ^t*]+^([a-zA-Z_0-9]+^)[ ^t]++([^p*&:, ^t^[^]a-zA-Z_0-9./(!]++)[~;]"
+/Function String 3 = "%[a-zA-Z_0-9*&$^[^]*]+[ ^t]+[a-zA-Z_0-9*&$^[^]]+[ ^t*]+^([a-zA-Z_0-9]+^)[ ^t]++([^p*&:, ^t^[^]a-zA-Z_0-9./(!]++)[~;]"
+/Function String 4 = "%[a-z_0-9^[^]*]++ [a-z_0-9*^[^]]+[ ^t]++[a-z_0-9*^[^]]+[ ^t]++^([*a-z_0-9]+^)[ ^t]++([^p*&:, ^t^[^]a-z_0-9./(!]++)[~;]"
+/Function String 5 = "%^([a-zA-Z_0-9^[^]*]+^)[ ^t]++([^p*&:, ^t^[^]a-zA-Z_0-9./()!]++)[~;]"
+/Member String = "^([A-Za-z0-9_:.]+^)[ ^t^*&]+$S[ ^t]++[(-);,]"
+/Variable String = "%[ ^t]++^([!-ÿ~ ^t<>]+^)*[~a-z]$S[ ^t;,()^-]"
+/Indent Strings = "{" "if" "else" ":"
+/Unindent Strings = "}"
+/Open Brace Strings =  "{" "(" "["
+/Close Brace Strings = "}" ")" "]"
+/Open Fold Strings = "{"
+/Close Fold Strings = "}"
+/C1"Keywords" STYLE_KEYWORD
+auto 
+BoolSeries Bool break 
+case char const continue 
+default defined do double 
+else enum extern
+Else
+float for 
+goto 
+if int
+If
+long 
+Numeric  NumericSeries 
+Return register 
+short signed sizeof static struct switch
+typedef
+union unsigned
+void volatile
+while
+/C2"C++ Keywords" STYLE_KEYWORD
+catch class const_cast
+delete dynamic_cast
+explicit export
+false friend
+False
+inline
+mutable
+namespace new
+operator
+private protected public
+reinterpret_cast
+static_cast
+template this throw true try typeid typename
+True
+using
+virtual
+wchar_t
+
+/C3"Microsoft C extensions" STYLE_EXTENSION
+Begin
+End end
+naked
+thread
+uuid
+Params 
+Vars
+/C4"Operators" STYLE_OPERATOR
+!
+%
+&
+*
++
+-
+// /
+<
+=
+>
+^
+|
+~
+
+/C5"Functions" 
+AverageFC
+BigPointValue Buy BuyToCover
+CallAuctionFilter ContractUnit Commentary
+HighestFC
+IntPart IIFString IIF
+LowestFC
+min Min max Max
+PlotBool PlotNumeric Portfolio_CurrentCapital Portfolio_UsedMargin
+SellShort Sell
+Text
+XAverage
+
+/C6"TB Keywords" 
+CurrentDate Close
+Date
+InvalidInteger
+low Low
+MinMove MarketPosition
+Open
+Time
+PriceScale
